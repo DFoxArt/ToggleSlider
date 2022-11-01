@@ -69,14 +69,15 @@ body {
     left: 0px;
   }
 }
+
 input:checked + .slider {
   background-color: white;
 }
 input:checked + .slider:before {
-  transform: translateX(94px);
+  transform: translateX(100px);
   background-color: black;
 }
-input:not(:checked) + .slider:before {
+input:not(:checked) + .bounce:before {
   animation: bounce1 1s ease-in;
 }
 input:checked + .slider:after {
