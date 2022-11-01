@@ -1,5 +1,4 @@
 "use strict";
-
 const body = document.querySelector("body");
 const label = document.createElement("label");
 const input = document.createElement("input");
