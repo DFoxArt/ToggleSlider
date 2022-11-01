@@ -14,4 +14,5 @@ slider.classList.add("slider", "round");
 
 input.addEventListener("change", () => {
   body.classList.toggle("dark");
+  slider.classList.add('bounce')
 });
