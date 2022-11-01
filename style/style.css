@@ -49,16 +49,57 @@ body {
   background-color: white;
   transition: 0.6s;
 }
+@keyframes bounce1 {
+  40% {
+    left: -5px;
+  }
+  60% {
+    left: 9px;
+  }
+  70% {
+    left: -1px;
+  }
+  80% {
+    left: 6px;
+  }
+  90% {
+    left: 3px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 input:checked + .slider {
   background-color: white;
 }
 input:checked + .slider:before {
-  transform: translateX(96px);
+  transform: translateX(94px);
   background-color: black;
+}
+input:not(:checked) + .slider:before {
+  animation: bounce1 1s ease-in;
 }
 input:checked + .slider:after {
   transform: translateX(60px);
   background-color: black;
+  animation: bounce2 1s ease-in;
+}
+@keyframes bounce2 {
+  40% {
+    left: -20px;
+  }
+  60% {
+    left: -35px;
+  }
+  80% {
+    left: -26px;
+  }
+  90% {
+    left: -30px;
+  }
+  100% {
+    left: -26px;
+  }
 }
 .slider.round {
   border-radius: 34px;
