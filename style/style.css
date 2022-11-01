@@ -69,6 +69,7 @@ body {
     left: 0px;
   }
 }
+
 input:checked + .slider {
   background-color: white;
 }
